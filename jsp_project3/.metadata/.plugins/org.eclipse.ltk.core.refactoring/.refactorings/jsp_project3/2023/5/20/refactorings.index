@@ -1,0 +1,4 @@
+1684304265147	Move 'log4j2.xml' to 'WEB-INF'
+1684312767548	Move 'join.jsp' to 'member'
+1684312824202	Move 'schema.sql' to 'resources'
+1684392385591	Rename type 'boardVO'

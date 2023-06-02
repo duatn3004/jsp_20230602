@@ -1,0 +1,18 @@
+
+public class ProductVO {
+	private int pno;
+	private String pname;
+	private int price;
+	private String regdate;
+	private String madeby;
+	
+	public ProductVO() {}
+	
+	//상품등록 pname, price, madeby
+	
+	//상품리스트 pno, pname, regdate
+	
+	//상품 수정 pno, pname, price, madeby
+	
+	//상픔 상세페이지 전부
+}

@@ -1,0 +1,32 @@
+package repository;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+
+import domain.ProductVO;
+import orm.DatabaseConnecotr;
+
+public class ProductDAO implements DAO {
+	//DB Connector
+	private Connection conn;
+	//DB 연결후 sql 전송 객체
+	private PreparedStatement pst;
+	//쿼리문 작성 변수
+	private String qurey="";
+	
+	public ProductDAO() {
+		//싱글톤 방식의 객체 생성 방식
+		DatabaseConnecotr dbc = DatabaseConnecotr.getInstance();
+		conn = dbc.getConnection();
+	}
+	
+	
+	@Override
+	public int insert(ProductVO pvo) {
+		// TODO Auto-generated method stub
+		System.out.println(">>> DAO 접근완료");
+		qurey="insert into product(pname,price,madeby) values(?,?,?)";
+		return 0;
+	}
+
+}
